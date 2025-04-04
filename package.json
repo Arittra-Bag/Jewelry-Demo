@@ -1,0 +1,28 @@
+{
+  "name": "jewelry-shop-security",
+  "version": "1.0.0",
+  "description": "Jewelry Shop Security System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arittra-Bag/Jewelry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arittra-Bag/Jewelry/issues"
+  },
+  "homepage": "https://github.com/Arittra-Bag/Jewelry#readme",
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "electron": "^28.3.3",
+    "face-api.js": "^0.22.2",
+    "python-shell": "^5.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}

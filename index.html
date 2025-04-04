@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop Security System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Jewelry Shop Security System</h1>
+    </header>
+
+    <nav class="nav-container">
+        <button class="nav-button active" id="customersBtn">Customers</button>
+        <button class="nav-button" id="inventoryBtn">Inventory</button>
+        <button class="nav-button" id="pastRecordsBtn">Past Records</button>
+    </nav>
+
+    <main class="main-container">
+        <div class="customer-section">
+            <div class="customer-header">
+                <h2>Customers</h2>
+            </div>
+            <table class="customer-table" id="customerTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Entry Time</th>
+                        <th>Exit Time</th>
+                        <th>Status</th>
+                        <th>Visit Count</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTableBody">
+                    <!-- Customer rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="inventory-section" style="display: none;">
+            <div class="inventory-header">
+                <h2>Inventory Management</h2>
+                <button id="addNewItemBtn" class="add-inventory-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 5V15M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Add New Item
+                </button>
+            </div>
+            <div class="inventory-table-container">
+                <table class="inventory-table" id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryTableBody">
+                        <!-- Inventory items will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="past-records-section" style="display: none;">
+            <div class="past-records-header">
+                <h2>Past Records</h2>
+            </div>
+            <div class="past-records-table-container">
+                <table class="past-records-table" id="pastRecordsTable">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Entry Time</th>
+                            <th>Exit Time</th>
+                            <th>Duration</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pastRecordsTableBody">
+                        <!-- Past records will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="renderer.js"></script>
+</body>
+</html> 
