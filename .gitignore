@@ -7,3 +7,5 @@ env
 jewelry_inventory.db
 jewelry_shop.db
 past_records.db
+shape_predictor_68_face_landmarks.dat
+yolov8n.pt
